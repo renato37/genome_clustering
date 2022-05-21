@@ -9,8 +9,8 @@ import os
 
 if __name__ == '__main__':
     st.set_page_config(layout="wide")
-    st.session_state['expectedFolder'] = os.path.join('..','data')
-    st.session_state['distanceData'] = os.path.join('..','data', 'fastq')
+    st.session_state['expectedFolder'] = os.path.join('data')
+    st.session_state['distanceData'] = os.path.join('data', 'fastq')
     if ('expectedFolder' not in st.session_state or 'distanceData' not in st.session_state
             or not os.path.exists(st.session_state['expectedFolder']) or not os.path.exists(
                 st.session_state['distanceData'])):
